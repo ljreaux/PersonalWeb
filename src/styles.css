@@ -1,0 +1,190 @@
+:root {
+  --color-dark-blue: rgb(16, 16, 25);
+  --color-light-blue: rgb(123, 178, 200);
+  --color-white: #f6f1d1;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+  height: 100%;
+  background-color: var(--color-dark-blue);
+  margin: 0;
+  padding: 0;
+}
+
+.App {}
+
+.navbar a:hover {
+  color: var(--color-light-blue);
+  transition: color 200ms ease;
+}
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+.navbar li {
+  padding-inline: 1rem;
+  padding-left: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.projects {
+  position: relative;
+}
+
+.projects:hover .project-nav {
+  display: grid;
+}
+
+.project-nav {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  background-color: var(--color-dark-blue);
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.header {
+  margin-block: 0.5rem;
+}
+
+.project-nav span {
+  display: grid;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.project-nav span a {
+  padding-block: 0.25rem;
+}
+
+.home {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  color: var(--color-light-blue);
+  background-image: url(./assets/pexels-nao-triponez-792199.jpg);
+  background-size: cover;
+}
+
+.home h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-light-blue);
+}
+
+.home h1 span {
+  color: var(--color-dark-blue);
+}
+
+button {
+  border: none;
+  background-color: var(--color-light-blue);
+  color: var(--color-dark-blue);
+  padding: 0.4rem;
+  border-radius: 0.25rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-blue);
+  transition: all 200ms ease;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.about {
+  color: var(--color-white);
+  padding-inline: 2rem;
+  padding-block: 4rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .25em;
+  font-size: 4em;
+}
+
+.project-div {
+  color: var(--color-white);
+  display: grid;
+  place-items: center;
+}
+
+.project-div img {
+  max-width: 50vw;
+  border: 2px solid var(--color-white);
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.project-section {
+  position: relative;
+  margin-top: 3em;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-list {
+  list-style: none;
+
+}
+
+/* .project-list ul:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.project-card {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card a {
+  max-width: fit-content;
+  display: grid;
+  place-items: center;
+}
