@@ -6,9 +6,8 @@
 
 body {
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100%;
-  background-color: var(--color-dark-blue);
   margin: 0;
   padding: 0;
 }
@@ -27,6 +26,7 @@ body {
   left: 0;
   display: flex;
   justify-content: space-between;
+  background-color: var(--color-dark-blue);
 }
 
 .navbar ul {
@@ -125,7 +125,7 @@ button:hover {
 }
 
 .about {
-  color: var(--color-white);
+  color: var(--color-dark-blue);
   padding-inline: 2rem;
   padding-block: 4rem;
 }
@@ -145,7 +145,7 @@ button:hover {
 }
 
 .project-div {
-  color: var(--color-white);
+  color: var(--color-dark-blue);
   display: grid;
   place-items: center;
 }
@@ -187,4 +187,12 @@ button:hover {
   max-width: fit-content;
   display: grid;
   place-items: center;
+}
+
+.fullstack-logo {
+  max-width: 100%;
+}
+
+.project-section .active {
+  color: var(--color-light-blue);
 }

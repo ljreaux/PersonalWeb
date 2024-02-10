@@ -9,8 +9,17 @@ export default function Home() {
       </h1>
       <div className="buttons">
         <button onClick={() => navigate("/about")}>About Me</button>
-        <button>Resume</button>
-        <button>Projects</button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1PYM-dillFHdcStMO5MukmxGJR9lrch6l/view?usp=drive_link",
+              "_blank"
+            )
+          }
+        >
+          Resume
+        </button>
+        <button onClick={() => navigate("/projects/")}>Projects</button>
       </div>
     </div>
   );

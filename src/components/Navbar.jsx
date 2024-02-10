@@ -23,7 +23,7 @@ export default function Navbar() {
           </a>
         </li>
         <li className="projects">
-          <Link to={"/projects"}>
+          <Link to={"/projects/fullstack"}>
             <GrProjects />
           </Link>
           <ProjectNav />

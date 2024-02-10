@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function ProjectNav() {
   return (
     <div className="project-nav">
-      <Link to={"/projects"} className="header">
+      <Link to={"/projects/fullstack"} className="header">
         Projects
       </Link>
 
