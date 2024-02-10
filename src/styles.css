@@ -12,7 +12,8 @@ body {
   padding: 0;
 }
 
-.App {}
+.App {
+}
 
 .navbar a:hover {
   color: var(--color-light-blue);
@@ -140,7 +141,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: .25em;
+  gap: 0.25em;
   font-size: 4em;
 }
 
@@ -166,7 +167,6 @@ button:hover {
 
 .project-list {
   list-style: none;
-
 }
 
 /* .project-list ul:first-child {
