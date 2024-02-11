@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export default function ProjectCard({
   title,
@@ -18,7 +18,7 @@ export default function ProjectCard({
           {<span className="col-light">Project Description: </span>}
           {description}
         </li>
-        <li>
+        <li className="technologies">
           <li className="col-light pt-2">Technologies Used:</li>
           <ul>
             {technologies.map((tech) => (

@@ -1,8 +1,9 @@
-import React from "react";
+import { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import meadTools from "../../assets/fb-cover.png";
+import ProjectDiv from "./ProjectDiv";
 
-export default function Fullstack() {
+export default function Fullstack({ count, setCount, setProjectLength }) {
   const wordGameArr = [
     { name: "React", for: "All UI elements, functionality, and logic" },
     {
@@ -30,17 +31,22 @@ export default function Fullstack() {
       for: "Netlify and AWS",
     },
   ];
-  return (
-    <div className="project-div">
-      <ProjectCard
-        title={"MeadTools"}
-        description={
-          "An all-in-one mead, wine, and cider recipe building calculator built using a PERN stack. I have been making mead for four years now and my biggest issue with developing recipes has always been the resources available to create them. MeadTools solves two major issues. It automatically calculates the volume added by ingredients like fruit and it consolidates all of the needed tools in one place. MeadTools has dozens of users and is under an MIT license on github."
-        }
-        imgUrl={meadTools}
-        technologies={wordGameArr}
-        link={"https://meadtools.com"}
-      />
-    </div>
-  );
+  const cardArr = [
+    <ProjectCard
+      title={"MeadTools"}
+      key={"MeadTools"}
+      description={
+        "An all-in-one mead, wine, and cider recipe building calculator built using a PERN stack. I have been making mead for four years now and my biggest issue with developing recipes has always been the resources available to create them. MeadTools solves two major issues. It automatically calculates the volume added by ingredients like fruit and it consolidates all of the needed tools in one place. MeadTools has dozens of users and is under an MIT license on github."
+      }
+      imgUrl={meadTools}
+      technologies={wordGameArr}
+      link={"https://meadtools.com"}
+    />,
+  ];
+  useEffect(() => {
+    setCount(0);
+    setProjectLength(cardArr.length - 1);
+  }, []);
+
+  return <ProjectDiv cardArr={cardArr} count={count} />;
 }

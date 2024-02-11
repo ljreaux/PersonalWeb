@@ -101,13 +101,31 @@ body {
     opacity: 1;
   }
 }
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .home h1 {
   font-size: 3rem;
   padding: 1rem;
   text-align: center;
   color: var(--color-light-blue);
   opacity: 0;
-  animation: fade-in 5s ease 2s forwards;
+  animation: fade-in 3s ease 2s forwards, slide-down 3s ease 2s forwards;
   transition: color 1s ease;
 }
 
@@ -133,7 +151,7 @@ button {
   place-items: center;
   cursor: pointer;
   opacity: 0;
-  animation: fade-in 5s ease 5s forwards;
+  animation: fade-in 5s ease 2s forwards, slide-up 5s ease 2s forwards;
 }
 
 button:hover {
@@ -161,6 +179,10 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+}
+
+.about-content span {
+  animation: fade-in 3s ease forwards;
 }
 
 .logos {
@@ -210,10 +232,11 @@ button:hover {
 }
 
 .project-section {
-  position: relative;
+  position: sticky;
   margin-top: 3em;
   width: 100%;
   justify-content: center;
+  z-index: 1001;
 }
 
 .project-list {
@@ -227,12 +250,18 @@ button:hover {
 .col-dark {
   color: var(--color-dark-blue);
 }
+
+.project-page {
+  width: 100vw;
+}
+
 .project-card {
-  width: 90vw;
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fade-in 2s ease forwards;
 }
 
 .project-card a {
@@ -252,4 +281,25 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.technologies {
+  animation: slide-up 2s ease forwards;
+}
+
+.left {
+  position: fixed;
+  left: 1em;
+  top: 50%;
+  animation: none;
+  opacity: 1;
+  transform: translateY(0);
+}
+.right {
+  position: fixed;
+  right: 1em;
+  top: 50%;
+  animation: none;
+  opacity: 1;
+  transform: translateY(0);
 }
