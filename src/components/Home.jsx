@@ -19,7 +19,9 @@ export default function Home() {
         >
           Resume
         </button>
-        <button onClick={() => navigate("/projects/")}>Projects</button>
+        <button onClick={() => navigate("/projects/fullstack")}>
+          Projects
+        </button>
       </div>
     </div>
   );

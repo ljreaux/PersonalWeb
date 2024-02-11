@@ -4,15 +4,16 @@
   --color-white: #f6f1d1;
 }
 
+.pt-2 {
+  padding-top: 1rem;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.App {
 }
 
 .navbar a:hover {
@@ -49,6 +50,7 @@ body {
 
 .projects {
   position: relative;
+  padding-right: 2em;
 }
 
 .projects:hover .project-nav {
@@ -62,6 +64,7 @@ body {
   right: 0;
   background-color: var(--color-dark-blue);
   padding: 1rem;
+  padding-right: 2em;
   border-bottom-left-radius: 0.5rem;
 }
 
@@ -81,30 +84,47 @@ body {
 
 .home {
   width: 100vw;
-  height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
   color: var(--color-light-blue);
   background-image: url(./assets/pexels-nao-triponez-792199.jpg);
   background-size: cover;
 }
-
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home h1 {
   font-size: 3rem;
   padding: 1rem;
   text-align: center;
   color: var(--color-light-blue);
+  opacity: 0;
+  animation: fade-in 5s ease 2s forwards;
+  transition: color 1s ease;
 }
 
+.home h1:hover:not(span) {
+  color: var(--color-dark-blue);
+}
 .home h1 span {
   color: var(--color-dark-blue);
+  transition: color 1s ease;
+}
+
+.home h1 span:hover {
+  color: var(--color-light-blue);
 }
 
 button {
-  border: none;
+  border: 1px solid var(--color-dark-blue);
   background-color: var(--color-light-blue);
   color: var(--color-dark-blue);
   padding: 0.4rem;
@@ -112,12 +132,15 @@ button {
   display: grid;
   place-items: center;
   cursor: pointer;
+  opacity: 0;
+  animation: fade-in 5s ease 5s forwards;
 }
 
 button:hover {
+  border-color: var(--color-light-blue);
   background-color: var(--color-dark-blue);
   color: var(--color-light-blue);
-  transition: all 200ms ease;
+  transition: all 1s ease;
 }
 
 .buttons {
@@ -128,7 +151,10 @@ button:hover {
 .about {
   color: var(--color-dark-blue);
   padding-inline: 2rem;
-  padding-block: 4rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.25em;
 }
 
 .about-content {
@@ -140,7 +166,7 @@ button:hover {
 .logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 0.25em;
   font-size: 4em;
 }
@@ -151,11 +177,36 @@ button:hover {
   place-items: center;
 }
 
-.project-div img {
+.project-div .image {
   max-width: 50vw;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-light-blue);
   border-radius: 2em;
   overflow: hidden;
+  z-index: 1000;
+}
+
+.image:hover {
+  border-color: var(--color-dark-blue);
+  transition: border-color 300ms ease;
+}
+
+.image-con {
+  position: relative;
+}
+
+.image-con::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 2em;
+
+  display: none;
+}
+.project-card:hover .image-con::after {
+  display: block;
+  background-color: rgba(123, 178, 200, 0.1);
+  transition: background-color 300ms ease;
 }
 
 .project-section {
@@ -169,12 +220,13 @@ button:hover {
   list-style: none;
 }
 
-/* .project-list ul:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.col-light {
+  color: var(--color-light-blue);
+}
 
+.col-dark {
+  color: var(--color-dark-blue);
+}
 .project-card {
   width: 90vw;
   display: flex;
@@ -191,8 +243,13 @@ button:hover {
 
 .fullstack-logo {
   max-width: 100%;
+  margin-top: 1em;
 }
 
 .project-section .active {
   color: var(--color-light-blue);
+}
+
+.hidden {
+  display: none;
 }
