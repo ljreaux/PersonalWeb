@@ -303,3 +303,11 @@ button:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media only screen and (max-width: 650px) {
+  .about-content {
+    margin-top: 6rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

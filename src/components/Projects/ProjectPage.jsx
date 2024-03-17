@@ -1,10 +1,13 @@
-import Frontend from "./Frontend";
-import Backend from "./Backend";
-import Fullstack from "./Fullstack";
+import Projects from "./Projects";
 import ProjectToggle from "./ProjectToggle";
 import { Routes, Route } from "react-router-dom";
 import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
 import { useState } from "react";
+import {
+  fullstackProjects,
+  frontendProjects,
+  backendProjects,
+} from "./projectArrays";
 
 export default function ProjectPage() {
   const [count, setCount] = useState(0);
@@ -37,30 +40,33 @@ export default function ProjectPage() {
         <Route
           path="/fullstack"
           element={
-            <Fullstack
+            <Projects
               count={count}
               setCount={setCount}
               setProjectLength={setProjectLength}
+              projects={fullstackProjects}
             />
           }
         />
         <Route
           path="/frontend"
           element={
-            <Frontend
+            <Projects
               count={count}
               setCount={setCount}
               setProjectLength={setProjectLength}
+              projects={frontendProjects}
             />
           }
         />
         <Route
           path="/backend"
           element={
-            <Backend
+            <Projects
               count={count}
               setCount={setCount}
               setProjectLength={setProjectLength}
+              projects={backendProjects}
             />
           }
         />

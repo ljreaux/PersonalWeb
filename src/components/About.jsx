@@ -27,8 +27,16 @@ export default function About() {
         <span>
           <h3>Previous Employment</h3>
           <p>
-            I am transitioning from a carrier as a music teacher to a career as
-            a web developer.
+            I am transitioning from a career as a music teacher to a career as a
+            web developer. In my role as a Music Teacher at the Vicksburg Warren
+            School District, I developed and honed a diverse set of soft skills
+            that are directly applicable to web development. These include
+            effective communication, adaptability, creative problem-solving,
+            collaboration, and time management. Through conveying complex
+            musical concepts, tailoring teaching methods to individual student
+            needs, organizing events collaboratively, and managing multiple
+            tasks efficiently, I have cultivated a strong foundation for success
+            in my transition to web development.
           </p>
         </span>
         <span>
@@ -45,7 +53,7 @@ export default function About() {
           <p>
             I am familiar with HTML, CSS, Tailwind, Javascript, React, Node.js,
             Express, and PostgreSQL. I also have experience with Git and GitHub.
-            I have minimal experience with Jquery and Bootstrap.
+            I have minimal experience with Typescript, Jquery, and Bootstrap.
           </p>
         </span>
       </div>
