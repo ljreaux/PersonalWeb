@@ -10,9 +10,9 @@ export default function ProjectToggle() {
         <li>
           <NavLink to={"/projects/frontend"}>Frontend</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to={"/projects/backend"}>Backend</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
