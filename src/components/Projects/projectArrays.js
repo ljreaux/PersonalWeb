@@ -1,6 +1,7 @@
 import meadTools from "../../assets/fb-cover.png";
 import wordle from "../../assets/Screen Shot 2024-01-28 at 9.17.09 AM.png";
 import culinary from "../../assets/culinary.png";
+import QR from "../../assets/personalWebsite.png";
 const meadToolsArr = [
   { name: "React", for: "All UI elements, functionality, and logic." },
   {
@@ -102,4 +103,28 @@ export const frontendProjects = [
   },
 ];
 
-export const backendProjects = [];
+const qrArr = [
+  {
+    name: "Node",
+    for: "Used to create NPM package.",
+  },
+  {
+    name: "Inquirer && Inquirer/select",
+    for: "Used to gather user input.",
+  },
+  {
+    name: "QR-Image",
+    for: "Used to create a QR Code from a URL.",
+  },
+];
+
+export const backendProjects = [
+  {
+    title: "QR Code Generator",
+    description:
+      "A simple CLI tool for creating a QR Code from a URL. NPM package that will create a QR Code in the current working directory.",
+    imgUrl: QR,
+    technologies: qrArr,
+    link: "https://www.npmjs.com/package/@ljreaux/qr-code-generator",
+  },
+];

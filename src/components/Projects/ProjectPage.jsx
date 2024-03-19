@@ -59,7 +59,7 @@ export default function ProjectPage() {
             />
           }
         />
-        {/* <Route
+        <Route
           path="/backend"
           element={
             <Projects
@@ -69,7 +69,7 @@ export default function ProjectPage() {
               projects={backendProjects}
             />
           }
-        /> */}
+        />
       </Routes>
     </div>
   );
