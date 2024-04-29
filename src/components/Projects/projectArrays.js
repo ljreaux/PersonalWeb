@@ -9,11 +9,15 @@ const meadToolsArr = [
     for: "Used to quickly create a user-friendly and visually appealing UI/UX design.",
   },
   {
+    name: "TypeScript",
+    for: "Used for type-checking and static code analysis.",
+  },
+  {
     name: "EmailJS",
     for: "Used for contact email functionality.",
   },
   {
-    name: "ReactToPrint",
+    name: "ReactPDF",
     for: "Used to create printer-friendly recipe PDFs.",
   },
   {
@@ -26,7 +30,7 @@ const meadToolsArr = [
   },
   {
     name: "Hosting",
-    for: "Netlify and AWS",
+    for: "Netlify, Vercel, supabase",
   },
 ];
 const culinaryArr = [
@@ -81,6 +85,10 @@ const frontendMentorArr = [
   {
     name: "CSS",
     for: "Used grid and flexbox to make a clean and visually appealing UI on both desktop and mobile devices.",
+  },
+  {
+    name: "TypeScript",
+    for: "Used for logic of some of these projects.",
   },
 ];
 
