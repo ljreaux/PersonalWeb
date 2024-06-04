@@ -206,12 +206,22 @@ button:hover {
 .logos {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 0.25em;
   font-size: 4em;
 }
 
+.logos-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25em;
+  font-size: 2em;
+  margin-block: 2rem;
+}
+
 .project-div {
+  margin-block: 10rem;
   color: var(--color-dark-blue);
   display: grid;
   place-items: center;
@@ -250,11 +260,11 @@ button:hover {
 }
 
 .project-section {
-  position: sticky;
+  /* position: sticky; */
   margin-top: 3em;
   width: 100%;
   justify-content: center;
-  z-index: 1001;
+  /* z-index: 1001; */
 }
 
 .project-list {
@@ -280,6 +290,10 @@ button:hover {
   justify-content: center;
   align-items: center;
   animation: fade-in 2s ease forwards;
+}
+
+.project-card h1 {
+  text-align: center;
 }
 
 .project-card a {

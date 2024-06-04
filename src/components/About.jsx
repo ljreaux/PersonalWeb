@@ -1,8 +1,15 @@
-import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiPostgresql } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiCsharp,
+  SiDotnet,
+} from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
 import fullstack from "../assets/Fullstack_Academy_2021.jpeg";
 
 export default function About() {
@@ -46,14 +53,22 @@ export default function About() {
             <FaCss3Alt />
             <SiTailwindcss />
             <IoLogoJavascript />
+            <SiTypescript />
             <FaReact />
             <IoLogoNodejs />
             <BiLogoPostgresql />
+            <FaGitAlt />
+            <FaSquareGithub />
+          </span>
+          <span className="logos-small">
+            <TbBrandReactNative />
+            <SiCsharp />
+            <SiDotnet />
           </span>
           <p>
-            I am familiar with HTML, CSS, Tailwind, Javascript, React, Node.js,
-            Express, and PostgreSQL. I also have experience with Git and GitHub.
-            I have minimal experience with Typescript, Jquery, and Bootstrap.
+            I am familiar with HTML, CSS, Tailwind, Javascript, Typescript,
+            React, Node.js, Express, and PostgreSQL, git, and Github. I have
+            minimal experience with React Native, C#, and the .NET framework.
           </p>
         </span>
       </div>

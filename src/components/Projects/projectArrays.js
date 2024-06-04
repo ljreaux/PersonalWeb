@@ -136,3 +136,32 @@ export const backendProjects = [
     link: "https://www.npmjs.com/package/@ljreaux/qr-code-generator",
   },
 ];
+
+export const mobileProjects = [
+  {
+    title: "Aora",
+    description:
+      "A full stack React Native project based on a JS Mastery Tutorial. Allows users to create and view others AI generated videos.",
+    imgUrl:
+      "https://github.com/adrianhajdin/aora/blob/main/assets/images/cards.png?raw=true",
+    technologies: [
+      {
+        name: "React Native",
+        for: "All UI elements, functionality, and logic.",
+      },
+      {
+        name: "NativeWind",
+        for: "Used to make a clean and visually appealing UI.",
+      },
+      {
+        name: "TypeScript",
+        for: "Used for logic.",
+      },
+      {
+        name: "Appwrite",
+        for: "Used for Back end code.",
+      },
+    ],
+    link: "https://github.com/ljreaux/JS-Mastery-RN-Aora/",
+  },
+];
