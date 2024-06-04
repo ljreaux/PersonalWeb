@@ -7,6 +7,7 @@ import {
   fullstackProjects,
   frontendProjects,
   backendProjects,
+  mobileProjects,
 } from "./projectArrays";
 
 export default function ProjectPage() {
@@ -67,6 +68,17 @@ export default function ProjectPage() {
               setCount={setCount}
               setProjectLength={setProjectLength}
               projects={backendProjects}
+            />
+          }
+        />
+        <Route
+          path="/mobile"
+          element={
+            <Projects
+              count={count}
+              setCount={setCount}
+              setProjectLength={setProjectLength}
+              projects={mobileProjects}
             />
           }
         />

@@ -13,6 +13,9 @@ export default function ProjectToggle() {
         <li>
           <NavLink to={"/projects/backend"}>Backend</NavLink>
         </li>
+        <li>
+          <NavLink to={"/projects/mobile"}>Mobile</NavLink>
+        </li>
       </ul>
     </nav>
   );

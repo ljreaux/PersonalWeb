@@ -13,6 +13,8 @@ export default function ProjectNav() {
         <Link to={"/projects/frontend"}>Frontend</Link>
 
         <Link to={"/projects/backend"}>Backend</Link>
+
+        <Link to={"/projects/mobile"}>Mobile</Link>
       </span>
     </div>
   );
