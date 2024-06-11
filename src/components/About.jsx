@@ -67,7 +67,7 @@ export default function About() {
           </span>
           <p>
             I am familiar with HTML, CSS, Tailwind, Javascript, Typescript,
-            React, Node.js, Express, and PostgreSQL, git, and Github. I have
+            React, Node.js, Express, PostgreSQL, git, and Github. I have
             minimal experience with React Native, C#, and the .NET framework.
           </p>
         </span>
