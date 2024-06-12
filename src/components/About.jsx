@@ -6,11 +6,11 @@ import {
   SiTypescript,
   SiCsharp,
   SiDotnet,
+  SiNextdotjs,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
-import { RiNextjsFill } from "react-icons/ri";
 import fullstack from "../assets/Fullstack_Academy_2021.jpeg";
 
 export default function About() {
@@ -62,7 +62,7 @@ export default function About() {
             <FaSquareGithub />
           </span>
           <span className="logos-small">
-            <RiNextjsFill />
+            <SiNextdotjs />
             <TbBrandReactNative />
             <SiCsharp />
             <SiDotnet />
