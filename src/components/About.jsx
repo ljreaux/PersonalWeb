@@ -10,6 +10,7 @@ import {
 import { IoLogoNodejs } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
 import fullstack from "../assets/Fullstack_Academy_2021.jpeg";
 
 export default function About() {
@@ -61,14 +62,15 @@ export default function About() {
             <FaSquareGithub />
           </span>
           <span className="logos-small">
+            <RiNextjsFill />
             <TbBrandReactNative />
             <SiCsharp />
             <SiDotnet />
           </span>
           <p>
             I am familiar with HTML, CSS, Tailwind, Javascript, Typescript,
-            React, Node.js, Express, PostgreSQL, git, and Github. I have
-            minimal experience with React Native, C#, and the .NET framework.
+            React, Node.js, Express, PostgreSQL, git, and Github. I have minimal
+            experience with Next.js, React Native, C#, and the .NET framework.
           </p>
         </span>
       </div>
