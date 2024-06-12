@@ -2,6 +2,7 @@ import meadTools from "../../assets/fb-cover.png";
 import wordle from "../../assets/Screen Shot 2024-01-28 at 9.17.09 AM.png";
 import culinary from "../../assets/culinary.png";
 import QR from "../../assets/personalWebsite.png";
+
 const meadToolsArr = [
   { name: "React", for: "All UI elements, functionality, and logic." },
   {
@@ -32,6 +33,22 @@ const meadToolsArr = [
     name: "Hosting",
     for: "Netlify, Vercel, supabase",
   },
+];
+const zoomCloneArr = [
+  {
+    name: "Next.js",
+    for: "Framework used for building the frontend of the application.",
+  },
+  {
+    name: "TypeScript",
+    for: "Used for type-checking and enhancing code quality.",
+  },
+  { name: "Clerk", for: "Handles authentication and user management." },
+  {
+    name: "getstream",
+    for: "Integration for real-time chat and notifications.",
+  },
+  { name: "Tailwind CSS", for: "Utility-first CSS framework for styling." },
 ];
 const culinaryArr = [
   { name: "React", for: "All UI elements, functionality, and logic." },
@@ -69,6 +86,15 @@ export const fullstackProjects = [
     imgUrl: culinary,
     technologies: culinaryArr,
     link: "https://culinary-chronicle.netlify.app/",
+  },
+  {
+    title: "Zoom Clone",
+    description:
+      "A Zoom clone built following a detailed tutorial by JavaScript Mastery on YouTube. This project uses the latest Next.js and TypeScript to replicate Zoom's functionality. It allows users to securely log in, create and join meetings, and access features like recording, screen sharing, and participant management.",
+    imgUrl:
+      "https://raw.githubusercontent.com/ljreaux/js-mastery-zoom-clone/13d02dc157ef34a37a1b3ca395397c065991e82b/public/icons/yoom-logo.svg",
+    technologies: zoomCloneArr,
+    link: "https://js-mastery-zoom-clone.vercel.app/",
   },
 ];
 
