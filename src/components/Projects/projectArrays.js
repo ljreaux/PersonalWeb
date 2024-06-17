@@ -2,6 +2,8 @@ import meadTools from "../../assets/fb-cover.png";
 import wordle from "../../assets/Screen Shot 2024-01-28 at 9.17.09 AM.png";
 import culinary from "../../assets/culinary.png";
 import QR from "../../assets/personalWebsite.png";
+import adminDashboard from "../../assets/Screen Shot 2024-06-17 at 2.03.11 PM.png";
+import meadBot from "../../assets/MMMeadBot.png";
 
 const meadToolsArr = [
   { name: "React", for: "All UI elements, functionality, and logic." },
@@ -153,6 +155,46 @@ const qrArr = [
 ];
 
 export const backendProjects = [
+  {
+    title: "Discord Bot",
+    description:
+      "A discord bot for the Man Made Mead Discord server build using Discord.js and Typescript.",
+    imgUrl: meadBot,
+    technologies: [
+      {
+        name: "Discord.js",
+        for: "Used to interact with the Discord API.",
+      },
+      {
+        name: "Typescript",
+        for: "Used for type-checking and static code analysis.",
+      },
+      {
+        name: "MongoDB Atlas",
+        for: "Used to store commands.",
+      },
+    ],
+    link: "https://github.com/ljreaux/MMMeadBot",
+  },
+  {
+    title: "Disord Bot Admin Dashboard",
+    description:
+      "An admin dashboard for editing and adding commands to a Discord.js bot.",
+    imgUrl: adminDashboard,
+    technologies: [
+      { name: "Next.js", for: "Framework used for overall app structure." },
+      { name: "TypeScript", for: "All logic and type checking." },
+      { name: "Tailwind CSS", for: "Utility-first CSS framework for styling." },
+      { name: "Shadcn", for: "Prebuilt components with customiztion options." },
+      { name: "Clerk", for: "User authentication and authorization." },
+      {
+        name: "MongoDB Atlas",
+        for: "Cloud-hosted database for storing bot commands",
+      },
+      { name: "Vercel", for: "Hosting" },
+    ],
+    link: "https://github.com/ljreaux/discord-bot-interface",
+  },
   {
     title: "QR Code Generator",
     description:
